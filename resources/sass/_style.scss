@@ -1,0 +1,66 @@
+		.contenedor{
+			width: 1500px;
+			height: 800px;
+			background: #A7D0E1;
+			margin:0.5em auto;
+			padding:0.05em; 
+		}
+		.header{
+			height: 20%;
+			background: #697980;
+			border-radius: 1em; 
+			margin: 1em;
+		}
+		.nav{
+			height: 10%;
+			background:#164B63;
+			border-radius: 1em; 
+			margin: 1em;
+		}
+		.contenido{
+			height: 50%;
+			background:#A7D0E1;
+			margin: 1em;
+		}	
+		.fooder{
+			height: 10%;
+			background:#297090;
+			border-radius: 1em; 
+			margin: 1em;
+		}
+		.section{
+			height: 95%;
+			width: 70%;
+			background: #48ACD6; 
+			border-radius: 1em;
+			float:left;
+			margin: 0.5em;
+		}
+		.aside{
+			height: 95%;
+			width: 27%;
+			background: #48ACD6; 
+			border-radius: 1em;
+			float:right;
+			margin: 0.5em;
+		}
+		.arti{
+			width: 98.5%;
+			height:20%;
+			background: #035679;
+			border-radius: 1em; 
+			margin: 0.5em;
+		}
+
+
+
+		.bt-01 {
+			color: #000;
+			display: inline-block;
+			font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+			padding: 10px 15px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 25px;
+			color-interpolation-filters: $blue;
+		}

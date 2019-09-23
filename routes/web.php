@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('//', function () {
+Route::get('ma', function () {
     return view('bienvenido.maqueta01');
 });
