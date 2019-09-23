@@ -4,29 +4,29 @@
 	<title>MAQUETA</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}" crossorigin="anonymous">
-</head>
+	
 <body>
-	<div class="contenedor">
-		<div class="header">HEADER</div>
-		<div class="nav">NAV</div>
-		<div class="contenido">
-			<div class="section">SECTION
-				<article class="arti">
-					<h1>Hola como estan todo</h1>
-				</article>
-				<article class="arti">
-					<p>aqui no se que poner</p>
-				</article>
-				<article class="arti">
-					aqui menos 
-				</article>
-				<article class="arti">aqui tampoco
-				</article> 
+	<div class="container">
+			<header>HEADER</header>
+			<div class="row justify-content-center">
+				<div class="col-3 azul">1</div>
+				<div class="col-3 azul">2</div>
 			</div>
-			<div class="aside">ASIDE</div>
-		</div>
-		<div class="fooder">FOODER aqui no se que poner</div>
+			<div class="row justify-content-between">
+				<div class="col-3 azul">3</div>
+				<div class="col-3 azul">4</div>
+			</div>
+			<div class="row">
+				<div class="col-3 gris">a</div>
+				<div class="col-3 gris">b</div>
+				<div class="col-3 gris">c</div>
+				<div class="col-3 gris">d</div>
+			</div>
+			<div class="escritorio"> DESKTOP</div>
+			<div class="row justify-content-center">
+				<div class="col-3 azul">1</div>
+				<div class="col-3 azul">2</div>
+			</div>
 	</div>
-
 </body>
 </html>

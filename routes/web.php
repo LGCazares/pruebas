@@ -16,6 +16,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('ma', function () {
+Route::get('maq01', function () {
     return view('bienvenido.maqueta01');
+});
+
+Route::get('maq02', function () {
+    return view('bienvenido.maqueta02');
 });
