@@ -16,74 +16,65 @@
 			<button class="btn col-2 bt-01">Datos</button>
 			<button class="btn col-2 bt-01"><img src="images/lupa.png" style="height:20px" ></button>
 		</div>
-		<div class="col-12">
+		<div class="col">
 			<img src="images/educa.png" class="col-6" style="height:150px">
 			<img src="images/ipn.png" class="col-1" style="height:150px">
-			holss a tooofsdasd
+
 		</div>
-
-		<div class="m-5">
-			<table class="table mt-5">
-				<thead class="thead-dark">
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">First</th>
-						<th scope="col">Last</th>
-						<th scope="col">Handle</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>@twitter</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<table class="table">
-				<thead class="thead-light">
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">First</th>
-						<th scope="col">Last</th>
-						<th scope="col">Handle</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>@twitter</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="container">
+			<div>
+				<form action="{{ route('guardar') }}" method="POST">
+					@csrf
+					<div class="row mt-5">
+						<div class="col">
+							<input type="text" name="nombre" class="form-control" placeholder="Nombre">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Apellido Paterno">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Apellido Materno">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Edad">
+						</div>
+						<button type="submit" class="btn btn-dark">GUARDAR</button>
+					</div>
+				</form>
+			</div>
+			<div>
+				<table class="table mt-5">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">N°</th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Apellido Paterno</th>
+							<th scope="col">Apellido Materno</th>
+							<th scope="col">Edad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 

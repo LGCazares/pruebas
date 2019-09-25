@@ -23,3 +23,5 @@ Route::get('maq01', function () {
 Route::get('maq02', function () {
     return view('bienvenido.maqueta02');
 });
+
+Route::post('guardar', 'Controlador01@guardar_datos')->name('guardar');
