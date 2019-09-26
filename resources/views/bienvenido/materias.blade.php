@@ -23,20 +23,26 @@
 		</div>
 		<div class="container">
 			<div>
-				<form action="{{ route('guardar') }}" method="POST">
+				<form action="{{ route('guardar_materias') }}" method="POST">
 					@csrf
 					<div class="row mt-5">
 						<div class="col">
-							<input type="text" name="nombre" class="form-control" placeholder="Nombre">
+							<input type="text" name="materia_1" class="form-control" placeholder="Materia 1">
 						</div>
 						<div class="col">
-							<input type="text" name="apellido_paterno" class="form-control" placeholder="Apellido Paterno">
+							<input type="text" name="materia_2" class="form-control" placeholder="Materia 2">
 						</div>
 						<div class="col">
-							<input type="text" name="apellido_materno" class="form-control" placeholder="Apellido Materno">
+							<input type="text" name="materia_3" class="form-control" placeholder="Materia 3">
 						</div>
 						<div class="col">
-							<input type="number" name="edad" class="form-control" placeholder="Edad">
+							<input type="text" name="materia_4" class="form-control" placeholder="Materia 4">
+						</div>
+						<div class="col">
+							<input type="text" name="materia_5" class="form-control" placeholder="Materia 4">
+						</div>
+						<div class="col">
+							<input type="text" name="materia_6" class="form-control" placeholder="Materia 5">
 						</div>
 						<button type="submit" class="btn btn-dark">GUARDAR</button>
 					</div>
@@ -44,31 +50,32 @@
 			</div>
 			<div>
 				<table class="table mt-5">
-					<thead class="thead-dark">
+					<thead class="thead-warning">
 						<tr>
 							<th scope="col">ID</th>
-							<th scope="col">Nombre</th>
-							<th scope="col">Apellido Paterno</th>
-							<th scope="col">Apellido Materno</th>
-							<th scope="col">Edad</th>
+							<th scope="col">Materia 1</th>
+							<th scope="col">Materia 2</th>
+							<th scope="col">Materia 3</th>
+							<th scope="col">Materia 4</th>
+							<th scope="col">Materia 5</th>
 						</tr>
 					</thead>
 					<tbody>
-						@foreach($personas as $persona)
+						@foreach($materias as $materia)
 						<tr>
-							<th scope="row">{{ $persona->id }}</th>
-							<td>{{ $persona->nombre }}</td>
-							<td>{{ $persona->apellido_paterno }}</td>
-							<td>{{ $persona->apellido_materno }}</td>
-							<td>{{ $persona->edad }}</td>
+							<th scope="row">{{ $materia->id }}</th>
+							<td>{{ $materia->materia_1 }}</td>
+							<td>{{ $materia->materia_2 }}</td>
+							<td>{{ $materia->materia_3 }}</td>
+							<td>{{ $materia->materia_4 }}</td>
+							<td>{{ $materia->materia_5 }}</td>
 						</tr>
 						@endforeach
 					</tbody>
 				</table>
-				<div class="row justify-content-between">
-					<a href="{{ route('maq01') }}" class="col-5 btn btn-dark">MAQUETA 1</a>
+				<div class="row align-self-end">
 
-					<a href="{{ route('materias') }}" class="col-5 btn btn-WARNING">SIGUIENTE FORMULARIO</a>
+					<a href="{{ route('/') }}" class="col-5 btn btn-dark">REGRESAR</a>
 				</div>
 
 			</div>

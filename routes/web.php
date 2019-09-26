@@ -11,17 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('bienvenido.inicio');
-});
-
-
-Route::get('maq01', function () {
-    return view('bienvenido.maqueta01');
-});
-
 Route::get('maq02', function () {
     return view('bienvenido.maqueta02');
 });
+Route::get('maq01', 'Controlador01@maqueta01')->name('maq01');
+
+
+/*Datos */
+Route::get('/', 'Controlador01@inicio')->name('/');
 
 Route::post('guardar', 'Controlador01@guardar_datos')->name('guardar');
+
+
+
+/*Materias*/
+Route::get('materias', 'Controlador01@materias')->name('materias');
+
+Route::post('guardar_materias', 'Controlador01@guardar_materias')->name('guardar_materias');
